@@ -40,7 +40,7 @@ async def azure_openai(ctx):
     response = client.chat.completions.create(
         model="gpt-35-turbo", # model = "deployment_name".
         messages=[
-            {"role": "system", "content": "Eres un servicial asistente. Proporcional respuesta a las preguntas que formulan los usuarios"},
+            {"role": "system", "content": "Eres un servicial asistente. Proporcionas respuesta a las preguntas que formulan los usuarios"},
             {"role": "user", "content": msg}
         ]
     )    
